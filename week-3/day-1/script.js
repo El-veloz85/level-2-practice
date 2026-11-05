@@ -11,11 +11,11 @@ const isOpen = true; // boolean (true or false)
 
 // Log variables
 console.log(truckName, yearsOpen, isOpen);
-console.log(typeof "El Burro Veloz");
-console.log(1);
-console.log(typeof 1);
-console.log(true);
-console.log(typeof true);
+console.log(typeof truckName);
+console.log(yearsOpen);
+console.log(typeof yearsOpen);
+console.log(isOpen);
+console.log(typeof isOpen);
 
 // typeof tells you the type
 
