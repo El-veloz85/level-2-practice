@@ -11,12 +11,7 @@ const isOpen = true; // boolean (true or false)
 
 // Log variables
 console.log(truckName, yearsOpen, isOpen);
-console.log(typeof truckName);
-console.log(yearsOpen);
-console.log(typeof yearsOpen);
-console.log(isOpen);
-console.log(typeof isOpen);
-
+console.log(typeof truckName, typeof yearsOpen, typeof isOpen);
 // typeof tells you the type
 
 // TODO: Make 3 variables for YOUR truck: a name, a number, and a true/false.
