@@ -73,3 +73,10 @@ item.price = 7.5; // change
 console.log(item["price"]);
 
 // 2. Write isCheap(price): return "cheap!" if price is under 5, otherwise "fancy".
+function isCheap(price) {
+  if (price < 5) {
+    return "cheap!";
+  } else {
+    return "fancy";
+  }
+}
