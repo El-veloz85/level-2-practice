@@ -36,8 +36,16 @@ const exampleArrowTruck = {
 console.log("Step 2:", exampleArrowTruck.describe()); // the name is missing!
 
 // TODO: Add an arrow-function version to YOUR truck and log it.
+const ArrowTruck = {
+  name: "El Burro Veloz",
+  describe: () => {
+    return "Welcome to" + this.name + "!";
+  },
+};
+console.log("My Step 2:", ArrowTruck.describe());
 // TODO: Write one sentence in a comment: what went wrong with the arrow version?
 // (Hint: arrow functions don't get their own "this".)
+// broken on purpose: arrow functions don't get the truck's this
 
 // ---------- Step 3: JSON text → JavaScript ----------
 // JSON is text that looks like an object. JSON.parse turns it into a real object.
@@ -51,7 +59,8 @@ console.log("Step 3 price:", exampleParsed.price);
 // TODO: Write a JSON string for one of YOUR menu items. Parse it. Log one property.
 const jsonText = '{"name": "ChoriQueso","price": 6.75,"spicy": true}';
 const item = JSON.parse(jsonText);
-console.log("my item -", item.name);
+console.log("mystep:", jsonText);
+console.log("my item -", item);
 console.log("my price -", item.price);
 
 // ---------- ep 4: JavaScript → JSON text ----------
