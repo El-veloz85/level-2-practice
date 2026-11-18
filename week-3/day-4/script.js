@@ -34,14 +34,19 @@ menu.forEach(function (item) {
 });
 // ---------- Step 3: Put the menu on the page ----------
 // Example: one item, made safely with createElement + textContent.
-const list = document.getElementById("menu-list");
-const exampleLi = document.createElement("li");
-exampleLi.textContent = "Example: " + menu[0].name;
-list.appendChild(exampleLi);
+// const list = document.getElementById("menu-list");
+// const exampleLi = document.createElement("li");
+// exampleLi.textContent = "Example: " + menu[0].name;
+// list.appendChild(exampleLi);
 
 // TODO: Use forEach to add an <li> for EVERY menu item, showing its name and price.
 // Then delete the example <li> code above.
-
+const list = document.getElementById("menu-list");
+menu.forEach(function (item) {
+  const li = document.createElement("li");
+  li.textContent = item.name + " : $" + item.price;
+  list.appendChild(li);
+});
 // ---------- Step 4: A loop that adds up ----------
 // TODO: Use a for loop to add up every price into a total. Log the total.
 // Hint: start with  let total = 0;  then add each price inside the loop.
