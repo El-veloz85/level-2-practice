@@ -50,6 +50,11 @@ menu.forEach(function (item) {
 // ---------- Step 4: A loop that adds up ----------
 // TODO: Use a for loop to add up every price into a total. Log the total.
 // Hint: start with  let total = 0;  then add each price inside the loop.
+let total = 0;
+for (let i = 0; i < menu.length; i++) {
+  total = total + menu[i].price;
+}
+console.log("Total:", total);
 
 // ---------- Extra practice (if you finish early) ----------
 // 1. Count how many items cost less than $5 (a loop + an if).
